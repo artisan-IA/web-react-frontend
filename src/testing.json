@@ -1,5 +1,0 @@
-{
-    "question": "what customer liked",
-    "review": "I liked sushi a lot. I think nori was a little stale and dumplings were tasteless. I wish they had chocolate ice cream. But green tea ice cream i tries was also fantastic",
-    "openai_labels": ["sushi", "chocola ice cream", "gree tea ice cream"]
-}
