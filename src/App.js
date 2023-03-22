@@ -12,7 +12,7 @@ import IsPrivate from './components/IsPrivate';
 
 function App() {
 
-  const [ language, setLanguage ] = useState('en')
+  const [ language, setLanguage ] = useState('es')
 
   return (
     <div className="App">
