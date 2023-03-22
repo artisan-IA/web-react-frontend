@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Home = ({ language }) => {
 
     return (
@@ -5,17 +7,17 @@ const Home = ({ language }) => {
             <div className="home-text">
                 {language === "en" && <div className="home-text">
                     <h4>The power of big AI for your restaurant**</h4>
-                    <a href="/demo" className="orange-button">See how it works</a>
+                    <Link to="/demoinfo" className="orange-button">See how it works</Link>
                     <p>**Yes, it is posible!</p>    
                 </div>}
                 {language === "es" && <div className="home-text">
                     <h4>El poder de la gran IA para tu restaurante**</h4>
-                    <a href="/demo" className="orange-button">Ver cómo funciona</a>
+                    <Link to="/demoinfo" className="orange-button">Ver cómo funciona</Link>
                     <p>**¡Sí, es posible!</p>    
                 </div>}
                 {language === "ca" && <div className="home-text">
                     <h4>The power of big AI for your restaurant**</h4>
-                    <a href="/demo" className="orange-button">Mira com funciona</a>
+                    <Link to="/demoinfo" className="orange-button">Mira com funciona</Link>
                     <p>**¡Sí, és posible!</p>   
                 </div>}
             </div>
