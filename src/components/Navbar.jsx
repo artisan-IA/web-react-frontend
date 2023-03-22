@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom"
+import { useAuth } from "../hooks/useAuth";
 
 const Navbar = ({ language, setLanguage}) => {
+
+    const { user, logOutUser } = useAuth();
 
     const handleSetLanguage = (lang) => {
         setLanguage(lang);
@@ -24,7 +27,9 @@ const Navbar = ({ language, setLanguage}) => {
                     </div>  
                 </div>
                 <Link to={'/'}>Home</Link>
-                <Link to={'/demoinfo'}>Demo</Link>  
+                <Link to={'/demoinfo'}>Demo</Link>
+                {user && user.type === "admin" && <Link to={'/labeling'}>Labeling</Link>}
+                {user && <Link href="#" onClick={logOutUser}>Log out</Link>}
                 </div>
             </div>
             <hr></hr>

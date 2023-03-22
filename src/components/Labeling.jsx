@@ -47,6 +47,7 @@ const Labeling = () => {
     }
 
     const handleDeleteLabel = (e, i) => {
+        e.preventDefault();
         if (openiaArray[i] === null) {
             setWorkerArray(prev => {
                 return prev.filter((elem, index) => i !== index);
@@ -92,10 +93,15 @@ const Labeling = () => {
         <>
             {error && console.log(error)}
             {loading && <p>Loading...</p>}
-            {!loading && <div>
-                <h3>{label.question}</h3>
-                <p>{label.review}</p>
+            {!loading && <div id='labeling'>
+                <div>
+                    <h3>Question:</h3>
+                    <p>{label.question}</p>
+                    <h3>Review:</h3>
+                    <p>{label.review}</p>                    
+                </div>
                 <form>
+                    <h3>Labels</h3>
                     {workerArray.map((label, i) => {
                         if (label !== null) {
                             return (
@@ -108,7 +114,7 @@ const Labeling = () => {
                         return null
                     })}
                     <button onClick={handleAddLabel}>+</button>
-                    <button onClick={handleSubmit}>Submit</button>            
+                    <button onClick={handleSubmit} className="submit">Submit</button>            
                 </form>
             </div>}            
         </>

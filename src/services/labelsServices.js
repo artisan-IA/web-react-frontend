@@ -10,7 +10,8 @@ class labelsService {
             const storedToken = localStorage.getItem('authToken');
             if (storedToken) {
                 config.headers = { Authorization: `Bearer ${storedToken}`}
-            }
+            };
+            return config;
         })
     }
 

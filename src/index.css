@@ -59,7 +59,8 @@ table {
 3.- Home
 4.- Demo intro
 5.- Login
-6.- Show */
+6.- Show 
+7.- Labeling */
 
 :root {
   --main-bg-color: #ff9535;
@@ -467,4 +468,54 @@ section#home .home-text p {
   margin: 4vh auto;
   height: auto;
   width: 50vw;
+}
+
+/* 7.-Labeling */
+
+#labeling {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+}
+
+#labeling > div {
+  width: 40%;
+}
+
+#labeling h3 {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 2vh;
+}
+
+#labeling > div > p {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 6vh;
+}
+
+#labeling > form {
+  width: 25%;
+  
+}
+
+#labeling > form > div {
+  margin: 2vh 0;
+}
+
+#labeling > form > div > input {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  border: 1px solid black;
+}
+
+#labeling button {
+  font-size: 1.1em;
+  margin: 0 1vw;
+}
+
+#labeling .submit {
+  margin-bottom: 3vh;
 }

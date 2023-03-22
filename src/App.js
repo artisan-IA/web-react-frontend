@@ -9,6 +9,7 @@ import InfoDemo from './pages/InfoDemo'
 import Login from './pages/Login'
 import Demo from './pages/Demo';
 import IsPrivate from './components/IsPrivate';
+import IsAdmin from './components/IsAdmin';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
           <Route path='/demoinfo' element={<InfoDemo language={language} />} />
           <Route path='/demo' element={<IsPrivate> <Demo language={language} /> </IsPrivate>} />
           <Route path='/login' element={<Login />} />
-          <Route path='/labeling' element={<Labeling />} />
+          <Route path='/labeling' element={<IsAdmin> <Labeling /> </IsAdmin>} />
         </Routes>
       <Footer />
     </div>
