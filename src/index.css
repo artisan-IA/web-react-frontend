@@ -530,6 +530,10 @@ section#home .home-text p {
   nav {
     height: 55vh;
   }
+
+  #login {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 426px) {
@@ -560,8 +564,23 @@ section#home .home-text p {
     right: 27vw;
   }
 
-  .orange-button {
+  section#home .orange-button {
     position: absolute;
     top: 65vh;
+  }
+
+  section#demo .demo-work .login,
+  section#demo .demo-work a {
+    width: 12vw;
+  }
+
+  section#demo h4,
+  section#demo p {
+    width: 70%;
+    text-align: center;
+  }
+
+  section#demo {
+    background-size: 200%
   }
 }
