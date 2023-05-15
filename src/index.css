@@ -519,3 +519,49 @@ section#home .home-text p {
 #labeling .submit {
   margin-bottom: 3vh;
 }
+
+/* For tablet */
+
+@media only screen and (max-width: 768px) {
+  nav .banner {
+    width: 80%;
+  }
+
+  nav {
+    height: 55vh;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  nav {
+    height: 60vh;
+  }
+
+  nav .links a {
+    margin: 0 2vw;
+  }
+
+  section#home {
+    flex-direction: column;
+    height: 90vh;
+    position: relative;
+  }
+
+  section#home > div {
+    width: 100%;
+  }
+
+  section#home .home-img {
+    height: 50vh;
+  }
+
+  section#home .home-text p {
+    top: 52vh;
+    right: 27vw;
+  }
+
+  .orange-button {
+    position: absolute;
+    top: 65vh;
+  }
+}
