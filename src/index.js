@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AuthContextWrapper } from './context/authContext';
+import { ScrollToTop } from './hooks/scrollToTop';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Router>
       <AuthContextWrapper>
+        <ScrollToTop />
         <App />          
       </AuthContextWrapper>
     </Router>

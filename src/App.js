@@ -8,8 +8,12 @@ import Home from './pages/Home'
 import InfoDemo from './pages/InfoDemo'
 import Login from './pages/Login'
 import Demo from './pages/Demo';
-import IsPrivate from './components/IsPrivate';
+// import IsPrivate from './components/IsPrivate';
 import IsAdmin from './components/IsAdmin';
+import Dashboard from './pages/Dashboard';
+import BarChartView from './components/BarChartView';
+import LinechartView from './components/LineChartView';
+import SliderChartView from './components/SliderChartView';
 
 function App() {
 
@@ -21,7 +25,13 @@ function App() {
         <Routes>
           <Route path='/' element={<Home language={language} />} />
           <Route path='/demoinfo' element={<InfoDemo language={language} />} />
-          <Route path='/demo' element={<IsPrivate> <Demo language={language} /> </IsPrivate>} />
+          <Route path='/demo' element={<Demo language={language} />} />
+          <Route path='/dashboard' element={<Dashboard />} >
+            <Route path='slider' element={<SliderChartView />} />
+            <Route path='barChart' element={<BarChartView />} />
+            <Route path='lineChart' element={<LinechartView />}  />
+            {/* <Route path='map' /> */}
+          </Route >
           <Route path='/login' element={<Login />} />
           <Route path='/labeling' element={<IsAdmin> <Labeling /> </IsAdmin>} />
         </Routes>

@@ -29,7 +29,7 @@ const Navbar = ({ language, setLanguage}) => {
                 <Link to={'/'}>Home</Link>
                 <Link to={'/demoinfo'}>Demo</Link>
                 {user && user.type === "admin" && <Link to={'/labeling'}>Labeling</Link>}
-                {user && <Link to={'/dashboard'}>Dashboard</Link>}
+                {<Link to={'/dashboard'}>Dashboard</Link>}
                 {user && <Link href="#" onClick={logOutUser}>Log out</Link>}
                 </div>
             </div>

@@ -10,7 +10,7 @@ const InfoDemo = ({ language }) => {
             {!isLoading && <section id="demo">
                 <div className="background-clear"></div>
                 {language === "en" && <div className="demo-work">
-                    {!user && <Link to={'/login'} className="orange-button login">Log in</Link>}
+                    {/* {!user && <Link to={'/login'} className="orange-button login">Log in</Link>} */}
                     {user && <p>Hello {user.username}</p>}
                     <h4>We are working on our demo.</h4>
                     <p>Important! Please read.</p>
@@ -19,7 +19,7 @@ const InfoDemo = ({ language }) => {
                     <Link to="/demo" className="orange-button">See the demo</Link>
                 </div>}
                 {language === "ca" && <div className="demo-work">
-                    {!user && <Link to={'/login'} className="orange-button login">Log in</Link>}
+                    {/* {!user && <Link to={'/login'} className="orange-button login">Log in</Link>} */}
                     {user && <p>Hola {user.username}</p>}
                     <h4>Estem treballant en la nostra demo.</h4>
                     <p>Important! Si us plau, llegir.</p>
@@ -28,7 +28,7 @@ const InfoDemo = ({ language }) => {
                     <Link to="/demo" className="orange-button">Veure la demo</Link>
                 </div>}
                 {language === "es" && <div className="demo-work">
-                    {!user && <Link to={'/login'} className="orange-button login">Log in</Link>}
+                    {/* {!user && <Link to={'/login'} className="orange-button login">Log in</Link>} */}
                     {user && <p>Hola {user.username}</p>}
                     <h4>Estamos trabajando en nuestra demo.</h4>
                     <p>¡Importante! Por favor lea.</p>
